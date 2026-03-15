@@ -13,12 +13,16 @@ class PenghuniCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final cardColor = isDark ? const Color(0xFF1C2333) : Colors.white;
+    final iconColor = isDark ? Colors.white70 : const Color(0xFF162447);
+    final textColor = isDark ? Colors.white : const Color(0xFF1A1A2E);
     return GestureDetector(
       onTap: onTap,
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: cardColor,
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
@@ -61,39 +65,48 @@ class PenghuniCard extends StatelessWidget {
                   children: [
                     Text(
                       penghuni.nama,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 15,
-                        color: Color(0xFF1A1A2E),
+                        color: textColor,
                       ),
                     ),
                     const SizedBox(height: 4),
                     Row(
                       children: [
-                        const Icon(Icons.phone_outlined, size: 13, color: Color(0xFF888888)),
+                        const Icon(
+                          Icons.phone_outlined,
+                          size: 13,
+                          color: Color(0xFF888888),
+                        ),
                         const SizedBox(width: 4),
                         Text(
                           penghuni.nomorHP,
-                          style: const TextStyle(fontSize: 13, color: Color(0xFF888888)),
+                          style: const TextStyle(
+                            fontSize: 13,
+                            color: Color(0xFF888888),
+                          ),
                         ),
                       ],
                     ),
                   ],
                 ),
               ),
-              const SizedBox(width: 8),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 6,
+                ),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF162447).withOpacity(0.1),
+                  color: isDark ? Colors.white.withOpacity(0.15) : const Color(0xFF162447).withOpacity(0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Text(
                   'Rp ${_formatHarga(penghuni.hargaSewa)}',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 11,
                     fontWeight: FontWeight.w600,
-                    color: Color(0xFF162447),
+                    color: iconColor,
                   ),
                 ),
               ),
@@ -105,10 +118,14 @@ class PenghuniCard extends StatelessWidget {
   }
 
   String _formatHarga(String harga) {
-    final angka = int.tryParse(harga.replaceAll('.', '').replaceAll(',', ''));
+    final angka = int.tryParse(harga);
     if (angka == null) return harga;
-    if (angka >= 1000000) return '${(angka / 1000000).toStringAsFixed(1)}jt';
-    if (angka >= 1000) return '${(angka / 1000).toStringAsFixed(0)}rb';
+    if (angka >= 1000000) {
+      return '${(angka / 1000000).toStringAsFixed(1)}jt';
+    }
+    if (angka >= 1000) {
+      return '${(angka / 1000).toStringAsFixed(0)}rb';
+    }
     return harga;
   }
 }
