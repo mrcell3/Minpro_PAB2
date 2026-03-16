@@ -34,6 +34,7 @@ KostKu adalah aplikasi sederhana namun fungsional untuk membantu pemilik kost da
 minpro_pab2/
 ├── .env
 ├── pubspec.yaml
+├── Tampilan_aplikasi
 └── lib/
     ├── main.dart
     ├── models/
