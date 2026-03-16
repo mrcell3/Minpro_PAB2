@@ -80,3 +80,36 @@ minpro_pab2/
 
 ## Tampilan Aplikasi📲
 
+### Login
+
+![Login Page](Tampilan_aplikasi/login.png)
+
+### Register
+
+![Login Page](Tampilan_aplikasi/register.png)
+
+### Tambah penghuni
+
+![Login Page](Tampilan_aplikasi/create.png)
+
+### Lihat daftar penghuni
+
+![Login Page](Tampilan_aplikasi/home.png)
+
+### Detail penghuni
+
+![Login Page](Tampilan_aplikasi/detail.png)
+
+### Edit data penghuni
+
+![Login Page](Tampilan_aplikasi/update.png)
+
+### Tanggal masuk menggunakan Date Picker
+
+![Login Page](Tampilan_aplikasi/date%20picker.png) 
+
+### Dark Mode
+
+![Login Page](Tampilan_aplikasi/home%20-%20dark%20mode.png) 
+
+![Login Page](Tampilan_aplikasi/detail%20-%20dark%20mode.png) 
