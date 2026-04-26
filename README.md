@@ -81,60 +81,37 @@ minpro_pab2/
 
 ## Tampilan Aplikasi📲
 
-<details>
-<summary>📸 Login</summary>
-
-![Login Page](Tampilan_aplikasi/login.png)
-
-</details>
-
-<details>
-<summary>📸 Register</summary>
-
-![Login Page](Tampilan_aplikasi/register.png)
-
-</details>
-
-<details>
-<summary>📸 Tambah penghuni</summary>
-
-![Login Page](Tampilan_aplikasi/create.png)
-
-</details>
-
-<details>
-<summary>📸 Lihat daftar penghuni</summary>
-
-![Login Page](Tampilan_aplikasi/home.png)
-
-</details>
-
-<details>
-<summary>📸 Detail penghuni</summary>
-
-![Login Page](Tampilan_aplikasi/detail.png)
-
-</details>
-
-<details>
-<summary>📸 Edit data penghuni</summary>
-
-![Login Page](Tampilan_aplikasi/update.png)
-
-</details>
-
-<details>
-<summary>📸 Tanggal masuk menggunakan Date Picker</summary>
-
-![Login Page](Tampilan_aplikasi/date%20picker.png) 
-
-</details>
-
-<details>
-<summary>📸 Dark Mode</summary>
-
-![Login Page](Tampilan_aplikasi/home%20-%20dark%20mode.png) 
-
-![Login Page](Tampilan_aplikasi/detail%20-%20dark%20mode.png) 
-
-</details>
+<table>
+  <tr>
+    <th>Login</th>
+    <th>Register</th>
+  </tr>  
+  <tr>
+    <td><img width="387" height="664" alt="login" src="https://github.com/user-attachments/assets/cce51011-8b70-4a08-9b96-e272e7fde5af" /></td>
+    <td><img width="384" height="732" alt="register" src="https://github.com/user-attachments/assets/f6791ae5-fc6d-4e21-abff-a3e005cedd07" /></td>
+  </tr>
+  <tr>
+    <th>Tambah Penghuni</th>
+    <th>Lihat Daftar Penghuni</th>
+  </tr>  
+  <tr>
+    <td><img width="385" height="778" alt="create" src="https://github.com/user-attachments/assets/de34bb37-55af-4185-81d7-ab2539278a2d" /></td>
+    <td><img width="385" height="812" alt="home" src="https://github.com/user-attachments/assets/fddc7b02-bb39-4529-a327-161121f85766" /></td>
+  </tr>
+  <tr>
+    <th>Detail Penghuni</th>
+    <th>Edit Data Penghuni</th>
+  </tr>  
+  <tr>
+    <td><img width="384" height="756" alt="detail" src="https://github.com/user-attachments/assets/9f389be0-da80-4538-a076-73e9320a6b3a" /></td>
+    <td><img width="384" height="773" alt="update" src="https://github.com/user-attachments/assets/62aa286d-ed0b-41ea-befb-6e9aae20e35f" /></td>
+  </tr>
+  <tr>
+    <th>Tanggal masuk menggunakan Date Picker</th>
+    <th>Dark Mode</th>
+  </tr>  
+  <tr>
+    <td><img width="384" height="810" alt="date picker" src="https://github.com/user-attachments/assets/999fb0a2-8c54-43b8-a7b7-be8d4b9bb81d" /></td>
+    <td><img width="376" height="803" alt="home - dark mode" src="https://github.com/user-attachments/assets/1c77996c-c785-4abe-bf9f-971c35c66325" /></td>
+  </tr>
+</table>
